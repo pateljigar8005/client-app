@@ -1,0 +1,29 @@
+.grid-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: calc(100% + 24px);
+    margin: -12px;
+}
+
+.grid-container .grid-item {
+    padding: 12px;
+    flex-grow: 0;
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+}
+
+@media (max-width:599px) {
+    .grid-container .grid-item {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width:959px) {
+    .grid-container .grid-item {
+        max-width: 50%;
+        flex-basis: 50%;
+    }
+}
