@@ -12,7 +12,6 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const { site_id } = router.query;
 
-  console.log("jigar test console")
   useEffect(() => {
     if (!site_id) {
       router.push(`/${querySiteID}`);
