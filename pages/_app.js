@@ -27,6 +27,7 @@ function MyApp({ Component, pageProps }) {
     // eslint-disable-next-line
   }, []);
 
+  console.log("jigar query siteID", querySiteID);
   const store = createStore(rootReducer);
   return (
     <Provider store={store}>
